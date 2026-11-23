@@ -23,7 +23,7 @@
 <br/>
 
 <div align="center">
-  <img src="assets/showcase/anim-welcome-hero.webp" width="800" alt="《金纽扣之镜》启程仪式首页金玫瑰流光呼吸动态演示" />
+  <img src="assets/showcase/anim-welcome-hero.gif" width="800" alt="《金纽扣之镜》启程仪式首页金玫瑰流光呼吸动态演示" />
 </div>
 
 </div>
@@ -51,7 +51,7 @@
 > 红丝绒流苏垂幔分列左右，对话区域采用深绯紫暗夜心形菱格壁布。每一条对话气泡均镶嵌古典巴洛克金雕画框，底部主输入框被整圈繁复的暗金玫瑰藤蔓环抱。
 
 <div align="center">
-  <img src="assets/showcase/anim-theatre-curtains.webp" width="800" alt="大剧院红丝绒帷幕展开与闭合实机动态演示" />
+  <img src="assets/showcase/anim-theatre-curtains.gif" width="800" alt="大剧院红丝绒帷幕展开与闭合实机动态演示" />
   <p><em>▲ 剧院级仪式感：红丝绒帷幕优雅垂落展开与舞台收拢的实机动效</em></p>
 </div>
 
@@ -61,7 +61,7 @@
 在 Agent 进行思考、代码执行与长任务排查时，状态栏将绽放平滑旋转的粉红玫瑰，并伴随毫秒级流式速率与上下文水位线监控：
 
 <div align="center">
-  <img src="assets/showcase/anim-working-rose.webp" width="340" alt="Working Rose Animation" />
+  <img src="assets/showcase/anim-working-rose.gif" width="340" alt="Working Rose Animation" />
   <p><em>▲ 任务运行态：粉红旋转玫瑰与实时上下文遥测（Hold · Ctx · tok/s）</em></p>
 </div>
 
@@ -94,7 +94,7 @@
 > 灵感源自经典 JRPG（RPG Maker）的经典分层菜单状态机，内置完整的全局键盘控制器拦截与音效联动。
 
 <div align="center">
-  <img src="assets/showcase/anim-jrpg-settings.webp" width="800" alt="JRPG 设置菜单实机动态交互演示" />
+  <img src="assets/showcase/anim-jrpg-settings.gif" width="800" alt="JRPG 设置菜单实机动态交互演示" />
   <p><em>▲ 实机动态交互：一级皇家状态机、Regalia 点数系统与二级勋章轮盘参数面板的平滑键盘流转</em></p>
 </div>
 
@@ -111,7 +111,7 @@
 > 侧边栏历史会话列表彻底告别原生枯燥的扁平色块。每一条会话均封装于精致的古典相框卡槽（`SL_Box_Mirrored`）之中，高亮激活态散发暗金微光，并由浮动玫瑰光标（`GEN_RoseCursor`）指引：
 
 <div align="center">
-  <img src="assets/showcase/anim-conversation-slots.webp" width="600" alt="Conversation Slot Animation" />
+  <img src="assets/showcase/anim-conversation-slots.gif" width="600" alt="Conversation Slot Animation" />
   <p><em>▲ 交互动效：相框卡槽悬停微光扩散与玫瑰激活光标动态追踪</em></p>
 </div>
 
@@ -204,11 +204,11 @@ antigravity-pocket-mirror-theme/
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
 │   │   ├── social-preview.png
-│   │   ├── anim-welcome-hero.webp
-│   │   ├── anim-theatre-curtains.webp
-│   │   ├── anim-working-rose.webp
-│   │   ├── anim-conversation-slots.webp
-│   │   └── anim-jrpg-settings.webp
+│   │   ├── anim-welcome-hero.gif
+│   │   ├── anim-theatre-curtains.gif
+│   │   ├── anim-working-rose.gif
+│   │   ├── anim-conversation-slots.gif
+│   │   └── anim-jrpg-settings.gif
 │   ├── sidebar_room_panorama.webp # 客室联动全景原画
 │   ├── SL_Box_Mirrored.webp      # 镜像卡槽底图
 │   ├── GEN_RoseCursor.png        # 激活玫瑰光标

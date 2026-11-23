@@ -22,7 +22,7 @@
 <br/>
 
 <div align="center">
-  <img src="assets/showcase/anim-welcome-hero.webp" width="800" alt="Pocket Mirror Theme Welcome Hero - Gilded Rose Crest Ambient Shimmer Animation" />
+  <img src="assets/showcase/anim-welcome-hero.gif" width="800" alt="Pocket Mirror Theme Welcome Hero - Gilded Rose Crest Ambient Shimmer Animation" />
 </div>
 
 </div>
@@ -50,7 +50,7 @@ Drawing artistic inspiration from the legendary psychological gothic mystery ind
 > Velvet tassel curtains frame the canvas on both sides, while the dialogue space is dressed in midnight wine-red heart-diamond damask. Every conversation bubble is set within an antique baroque gilded picture frame, bordered by intertwining dark golden rose filigree.
 
 <div align="center">
-  <img src="assets/showcase/anim-theatre-curtains.webp" width="800" alt="Velvet Curtains Opening and Closing Animation" />
+  <img src="assets/showcase/anim-theatre-curtains.gif" width="800" alt="Velvet Curtains Opening and Closing Animation" />
   <p><em>▲ Theatrical Immersion: Velvet curtains gracefully cascading open to unveil the grand dialogue stage</em></p>
 </div>
 
@@ -60,7 +60,7 @@ Drawing artistic inspiration from the legendary psychological gothic mystery ind
 While the Agent conducts extended thinking, tool execution, or deep code auditing, the status container blossoms with an animated spinning rose alongside real-time metrics:
 
 <div align="center">
-  <img src="assets/showcase/anim-working-rose.webp" width="340" alt="Working Rose Animation" />
+  <img src="assets/showcase/anim-working-rose.gif" width="340" alt="Working Rose Animation" />
   <p><em>▲ Active Execution: Animated revolving rose with real-time telemetry (Hold · Context Window · tok/s)</em></p>
 </div>
 
@@ -93,7 +93,7 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 > Inspired by classic RPG Maker hierarchical system menus, complete with global keyboard controller event interception and tactile soundscapes.
 
 <div align="center">
-  <img src="assets/showcase/anim-jrpg-settings.webp" width="800" alt="JRPG State Machine Interactive Animation" />
+  <img src="assets/showcase/anim-jrpg-settings.gif" width="800" alt="JRPG State Machine Interactive Animation" />
   <p><em>▲ Real-time Interaction: Fluid navigation between Primary Scene_Menu, active Regalia, and Scene_Settings medallion wheels</em></p>
 </div>
 
@@ -110,7 +110,7 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 > Sidebar conversation lists discard dull flat rectangles. Each dialogue session is nestled inside a gilded antique picture frame (`SL_Box_Mirrored`). Hovering triggers ambient radiance while the golden rose crest (`GEN_RoseCursor`) dynamically tracks your focus:
 
 <div align="center">
-  <img src="assets/showcase/anim-conversation-slots.webp" width="600" alt="Conversation Slot Animation" />
+  <img src="assets/showcase/anim-conversation-slots.gif" width="600" alt="Conversation Slot Animation" />
   <p><em>▲ Interaction Ergonomics: Ambient glow on hover and dynamic rose tracking cursor</em></p>
 </div>
 
@@ -203,11 +203,11 @@ antigravity-pocket-mirror-theme/
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
 │   │   ├── social-preview.png
-│   │   ├── anim-welcome-hero.webp
-│   │   ├── anim-theatre-curtains.webp
-│   │   ├── anim-working-rose.webp
-│   │   ├── anim-conversation-slots.webp
-│   │   └── anim-jrpg-settings.webp
+│   │   ├── anim-welcome-hero.gif
+│   │   ├── anim-theatre-curtains.gif
+│   │   ├── anim-working-rose.gif
+│   │   ├── anim-conversation-slots.gif
+│   │   └── anim-jrpg-settings.gif
 │   ├── sidebar_room_panorama.webp # Full parlour seamless panorama
 │   ├── SL_Box_Mirrored.webp      # Gilded slot card frame
 │   ├── GEN_RoseCursor.png        # Active rose focus cursor
