@@ -1,4 +1,4 @@
-# 🪞 Pocket Mirror: Goldenria — Gothic Victorian Theme Suite for Google Antigravity
+# 🪞 Pocket Mirror: GoldenerTraum — Gothic Victorian Theme Suite for Google Antigravity
 
 <div align="center">
 
@@ -33,7 +33,7 @@
 
 **Antigravity Pocket Mirror Theme** is a comprehensive, full-stack immersive gothic baroque customization suite engineered for **Google Antigravity (supporting version 2.34.0+)**.
 
-Drawing artistic inspiration from the legendary psychological gothic mystery indie masterpiece **《Pocket Mirror: Goldenria》**, this project thoroughly reimagines Antigravity's visual presentation, animation ergonomics, and system interaction:
+Drawing artistic inspiration from the legendary psychological gothic mystery indie masterpiece **《Pocket Mirror: GoldenerTraum》**, this project thoroughly reimagines Antigravity's visual presentation, animation ergonomics, and system interaction:
 - 🎭 **The Velvet Opera Stage & Curtains**: Heart-diamond damask wallpaper and baroque filigree prompt container;
 - 🛋️ **Victorian Parlour Viewport Linkage**: Breakthrough CSS viewport anchorage that resolves sidebar stretching and background fractures;
 - 🎮 **Dual-Layer JRPG State Machine Panel**: Classic RPG Maker style keyboard-driven system hub featuring character portraits and Regalia counters;
@@ -202,6 +202,7 @@ antigravity-pocket-mirror-theme/
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
+│   │   ├── social-preview.png
 │   │   ├── anim-welcome-hero.webp
 │   │   ├── anim-theatre-curtains.webp
 │   │   ├── anim-working-rose.webp
@@ -231,7 +232,7 @@ antigravity-pocket-mirror-theme/
 
 ## 🌹 Inspirations & Acknowledgments
 
-- **《Pocket Mirror: Goldenria》**: Immense gratitude to **Astral Shift**. This masterwork of gothic horror and fairytale storytelling provided endless inspiration for this project;
+- **《Pocket Mirror: GoldenerTraum》**: Immense gratitude to **Astral Shift**. This masterwork of gothic horror and fairytale storytelling provided endless inspiration for this project;
 - **Chuanban Patch (@Anarcadia)**: Heartfelt thanks to the upstream base project [chuanban-antigravity-theme-patch](https://github.com/Anarcadia/chuanban-antigravity-theme-patch) for its CDP injection architecture, font weight bridges, and comprehensive dictionary;
 - **Open Source Explorers**: Thank you to all community developers contributing to the Google Antigravity ecosystem.
 

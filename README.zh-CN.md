@@ -1,4 +1,4 @@
-# 🪞 Pocket Mirror: Goldenria — Gothic Victorian Theme Suite for Google Antigravity
+# 🪞 Pocket Mirror: GoldenerTraum — Gothic Victorian Theme Suite for Google Antigravity
 > **面向 Google Antigravity 的《金纽扣之镜》哥特玫瑰维多利亚沉浸式主题套件**
 
 <div align="center">
@@ -34,7 +34,7 @@
 
 **Antigravity Pocket Mirror Theme** 是一套面向 **Google Antigravity（支持 2.34.0+ 最新版本）** 的全栈沉浸式哥特巴洛克高定主题套件。
 
-本项目以经典哥特心理悬疑独立神作 **《Pocket Mirror: Goldenria》（金纽扣之镜）** 的艺术美学为灵魂，全面重构了 Antigravity 的前端视觉、动效交互与系统菜单体系：
+本项目以经典哥特心理悬疑独立神作 **《Pocket Mirror: GoldenerTraum》（金纽扣之镜）** 的艺术美学为灵魂，全面重构了 Antigravity 的前端视觉、动效交互与系统菜单体系：
 - 🎭 **大剧院红丝绒帷幕舞台**：心形菱格暗纹壁布与巴洛克金雕浮雕输入框；
 - 🛋️ **维多利亚客室全景视口一体联动**：独创 CSS 视口咬合，彻底解决侧边栏伸缩断层；
 - 🎮 **双层 JRPG 状态机系统面板**：键盘驱动的复古 RPG Maker 状态机，带皇室立绘与 Regalia 点数；
@@ -203,6 +203,7 @@ antigravity-pocket-mirror-theme/
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
+│   │   ├── social-preview.png
 │   │   ├── anim-welcome-hero.webp
 │   │   ├── anim-theatre-curtains.webp
 │   │   ├── anim-working-rose.webp
@@ -232,7 +233,7 @@ antigravity-pocket-mirror-theme/
 
 ## 🌹 致谢与灵感 (Inspirations & Credits)
 
-- **《Pocket Mirror: Goldenria》**：特别致敬开发团队 **Astral Shift**。这部伟大的哥特解谜艺术作品赋予了本项目无穷的灵感与美学指引；
+- **《Pocket Mirror: GoldenerTraum》**：特别致敬开发团队 **Astral Shift**。这部伟大的哥特解谜艺术作品赋予了本项目无穷的灵感与美学指引；
 - **川板补丁 (@Anarcadia)**：感谢上游基座项目 [chuanban-antigravity-theme-patch](https://github.com/Anarcadia/chuanban-antigravity-theme-patch) 提供的卓越 CDP 注入引擎、字体字重桥接方案与高品质汉化词表；
 - **开源贡献者们**：感谢所有为 Antigravity 生态贡献力量的开发者与探索者。
 
