@@ -47,6 +47,11 @@ Drawing artistic inspiration from the legendary psychological gothic mystery ind
 ### 🎭 Act I: The Velvet Opera Stage & Dialogue
 > Velvet tassel curtains frame the canvas on both sides, while the dialogue space is dressed in midnight wine-red heart-diamond damask. Every conversation bubble is set within an antique baroque gilded picture frame, bordered by intertwining dark golden rose filigree.
 
+<div align="center">
+  <img src="assets/showcase/anim-theatre-curtains.webp" width="800" alt="Velvet Curtains Opening and Closing Animation" />
+  <p><em>▲ Theatrical Immersion: Velvet curtains gracefully cascading open to unveil the grand dialogue stage</em></p>
+</div>
+
 ![Velvet Opera Stage Dialogue Interface](assets/showcase/theatre-dialogue.png)
 
 #### 🌸 Animated Working Rose Indicator
@@ -200,6 +205,7 @@ antigravity-pocket-mirror-theme/
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
+│   │   ├── anim-theatre-curtains.webp
 │   │   ├── anim-working-rose.webp
 │   │   ├── anim-conversation-slots.webp
 │   │   └── anim-jrpg-settings.webp

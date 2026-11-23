@@ -48,6 +48,11 @@
 ### 🎭 Act I: 大剧院主舞台与帷幕对话 (The Velvet Opera Stage & Dialogue)
 > 红丝绒流苏垂幔分列左右，对话区域采用深绯紫暗夜心形菱格壁布。每一条对话气泡均镶嵌古典巴洛克金雕画框，底部主输入框被整圈繁复的暗金玫瑰藤蔓环抱。
 
+<div align="center">
+  <img src="assets/showcase/anim-theatre-curtains.webp" width="800" alt="大剧院红丝绒帷幕展开与闭合实机动态演示" />
+  <p><em>▲ 剧院级仪式感：红丝绒帷幕优雅垂落展开与舞台收拢的实机动效</em></p>
+</div>
+
 ![大剧院红丝绒帷幕对话界面](assets/showcase/theatre-dialogue.png)
 
 #### 🌸 灵动运转指示器 (Working Rose Indicator)
@@ -201,6 +206,7 @@ antigravity-pocket-mirror-theme/
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
+│   │   ├── anim-theatre-curtains.webp
 │   │   ├── anim-working-rose.webp
 │   │   ├── anim-conversation-slots.webp
 │   │   └── anim-jrpg-settings.webp
