@@ -96,15 +96,8 @@
   <p><em>▲ 实机动态交互：一级皇家状态机、Regalia 点数系统与二级勋章轮盘参数面板的平滑键盘流转</em></p>
 </div>
 
-#### 1. 一级面板：皇家状态面板 (`Scene_Menu`)
-展示精美的主角立绘、皇室暗金纹章、当前持有的 **Regalia 点数**，以及六大核心系统导航菜单：
-
-![JRPG 状态机一级菜单 Scene_Menu](assets/showcase/jrpg-menu-scene.png)
-
-#### 2. 二级面板：系统参数与勋章轮盘 (`Scene_Settings`)
-进入二级设置时，左侧浮现金色勋章轮盘，底栏提供全套红白机/手柄风格的实体按键指南（`[Z] 确认 / [X] 取消 / [Q][E] 翻页 / [↑][↓] 导航`）：
-
-![JRPG 状态机二级菜单 Scene_Settings](assets/showcase/jrpg-settings-scene.png)
+- **皇家状态面板 (`Scene_Menu`)**：展示精美的主角立绘、皇室暗金纹章、当前持有的 **Regalia 点数**，以及六大核心系统导航菜单；
+- **系统参数面板 (`Scene_Settings`)**：左侧浮现金色勋章轮盘，底栏提供全套红白机/手柄风格的实体按键指南（`[Z] 确认 / [X] 取消 / [Q][E] 翻页 / [↑][↓] 导航`）。
 
 ---
 
@@ -201,8 +194,6 @@ antigravity-pocket-mirror-theme/
 │   │   ├── hero-pocket-mirror.png
 │   │   ├── theatre-dialogue.png
 │   │   ├── victorian-room-panorama.png
-│   │   ├── jrpg-menu-scene.png
-│   │   ├── jrpg-settings-scene.png
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico

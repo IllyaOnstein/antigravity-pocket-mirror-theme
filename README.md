@@ -95,15 +95,8 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
   <p><em>▲ Real-time Interaction: Fluid navigation between Primary Scene_Menu, active Regalia, and Scene_Settings medallion wheels</em></p>
 </div>
 
-#### 1. Primary Scene: Royal Status Chamber (`Scene_Menu`)
-Displays character portraits, gilded crests, active **Regalia Tokens**, and six primary system navigation portals:
-
-![JRPG Primary Scene Menu](assets/showcase/jrpg-menu-scene.png)
-
-#### 2. Secondary Scene: System Configuration & Medallions (`Scene_Settings`)
-Inside secondary settings, golden insignia medallions hover to the left while bottom navigation renders retro gamepad-style interaction shortcuts (`[Z] Confirm / [X] Cancel / [Q][E] Page Switch / [↑][↓] Navigate`):
-
-![JRPG Secondary Scene Settings](assets/showcase/jrpg-settings-scene.png)
+- **Royal Status Chamber (`Scene_Menu`)**: Showcases full-body character portraits, royal gilded insignia crests, active **Regalia Tokens**, and six primary system portals;
+- **System Configuration (`Scene_Settings`)**: Features dynamic insignia medallion wheels on the left, with retro gamepad-style interaction shortcuts at the footer (`[Z] Confirm / [X] Cancel / [Q][E] Page Switch / [↑][↓] Navigate`).
 
 ---
 
@@ -200,8 +193,6 @@ antigravity-pocket-mirror-theme/
 │   │   ├── hero-pocket-mirror.png
 │   │   ├── theatre-dialogue.png
 │   │   ├── victorian-room-panorama.png
-│   │   ├── jrpg-menu-scene.png
-│   │   ├── jrpg-settings-scene.png
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
