@@ -22,7 +22,9 @@
 
 <br/>
 
-![Pocket Mirror Theme Welcome Hero](assets/showcase/hero-pocket-mirror.png)
+<div align="center">
+  <img src="assets/showcase/anim-welcome-hero.webp" width="800" alt="《金纽扣之镜》启程仪式首页金玫瑰流光呼吸动态演示" />
+</div>
 
 </div>
 
@@ -98,6 +100,10 @@
 
 - **皇家状态面板 (`Scene_Menu`)**：展示精美的主角立绘、皇室暗金纹章、当前持有的 **Regalia 点数**，以及六大核心系统导航菜单；
 - **系统参数面板 (`Scene_Settings`)**：左侧浮现金色勋章轮盘，底栏提供全套红白机/手柄风格的实体按键指南（`[Z] 确认 / [X] 取消 / [Q][E] 翻页 / [↑][↓] 导航`）。
+
+> [!WARNING]
+> **关于设置菜单与语言切换的已知限制与免责声明**:
+> 鉴于 Google Antigravity 官方客户端对原生系统设置菜单的底层内核（框架内部状态机与生命周期门禁）控制极其严苛，本主题套件在设置界面注入的 JRPG 菜单与即时中英双语切换器在部分场景下可能会出现微小 UI 渲染竞态、轻微卡顿或偶发语言切换失败的情况。这属于上游客户端封闭内核的物理限制，并不会影响主界面对话、代码编写与 Agent 的日常业务。若遇到设置界面状态异常，只需按下快捷键 `Cmd/Ctrl + Shift + R` 强制刷新或重启客户端即可平滑自愈。
 
 ---
 
@@ -197,6 +203,7 @@ antigravity-pocket-mirror-theme/
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
+│   │   ├── anim-welcome-hero.webp
 │   │   ├── anim-theatre-curtains.webp
 │   │   ├── anim-working-rose.webp
 │   │   ├── anim-conversation-slots.webp
@@ -233,7 +240,8 @@ antigravity-pocket-mirror-theme/
 
 ## ⚖️ 免责声明 (Disclaimer)
 
-本项目为独立的非官方社区视觉定制套件，与 Google 没有任何关联或背书。本主题套件仅在本地运行时渲染层注入 CSS 与交互动效，不修改客户端安装包二进制与代码签名，不接触网络鉴权凭据，使用者可随时通过 `node install.mjs uninstall` 彻底卸载并无损还原。
+- **常规使用声明**：本项目为独立的非官方社区视觉定制套件，与 Google 没有任何关联或背书。本主题套件仅在本地运行时渲染层注入 CSS 与交互动效，不修改客户端安装包二进制与代码签名，不接触网络鉴权凭据，使用者可随时通过 `node install.mjs uninstall` 彻底卸载并无损还原。
+- **设置菜单与语言切换限制说明**：由于 Google Antigravity 官方客户端底层对设置菜单内核的校验与生命周期拦截极其严格，二级 JRPG 菜单与即时中英双语切换器在极个别情况下可能会出现轻微 bug、渲染延迟或切换失效。这属于上游客户端封闭架构的客观物理限制，完全不影响核心工作流。若遇异常，按 `Cmd/Ctrl + Shift + R` 或重启即可恢复。
 
 ---
 

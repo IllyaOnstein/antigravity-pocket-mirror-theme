@@ -21,7 +21,9 @@
 
 <br/>
 
-![Pocket Mirror Theme Welcome Hero](assets/showcase/hero-pocket-mirror.png)
+<div align="center">
+  <img src="assets/showcase/anim-welcome-hero.webp" width="800" alt="Pocket Mirror Theme Welcome Hero - Gilded Rose Crest Ambient Shimmer Animation" />
+</div>
 
 </div>
 
@@ -97,6 +99,10 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 
 - **Royal Status Chamber (`Scene_Menu`)**: Showcases full-body character portraits, royal gilded insignia crests, active **Regalia Tokens**, and six primary system portals;
 - **System Configuration (`Scene_Settings`)**: Features dynamic insignia medallion wheels on the left, with retro gamepad-style interaction shortcuts at the footer (`[Z] Confirm / [X] Cancel / [Q][E] Page Switch / [↑][↓] Navigate`).
+
+> [!WARNING]
+> **Known Limitations & Setting Menu Disclaimer**:
+> Due to Google Antigravity's exceptionally rigid internal kernel state bindings and strict DOM lifecycle guards within the native settings modal, the custom JRPG settings interface and runtime display language switcher (`zh` ↔ `en`) may occasionally encounter minor rendering artifacts, temporary race conditions, or localized switching delays. These occurrences are bound to upstream core client architecture and do not affect primary chat sessions, code generation, or agent execution. Should you experience any desynchronization or visual freezes, pressing `Cmd/Ctrl + Shift + R` or restarting the client will cleanly restore standard operating state.
 
 ---
 
@@ -196,6 +202,7 @@ antigravity-pocket-mirror-theme/
 │   │   ├── conversation-slots.png
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
+│   │   ├── anim-welcome-hero.webp
 │   │   ├── anim-theatre-curtains.webp
 │   │   ├── anim-working-rose.webp
 │   │   ├── anim-conversation-slots.webp
@@ -232,7 +239,8 @@ antigravity-pocket-mirror-theme/
 
 ## ⚖️ Disclaimer
 
-This project is an independent community visual customization suite and is neither affiliated with nor endorsed by Google. It operates strictly within local runtime rendering layers via standard CSS/JS injection and does not alter client binaries, package signatures, or authentication tokens. Users may completely uninstall and revert to standard vanilla Antigravity at any time via `node install.mjs uninstall`.
+- **General Usage**: This project is an independent community visual customization suite and is neither affiliated with nor endorsed by Google. It operates strictly within local runtime rendering layers via standard CSS/JS injection and does not alter client binaries, package signatures, or authentication tokens. Users may completely uninstall and revert to standard vanilla Antigravity at any time via `node install.mjs uninstall`.
+- **Settings Modal & Language Switching Caveats**: Due to Google Antigravity's exceptionally rigid internal kernel architecture and aggressive state guards within the native settings modal, users may occasionally encounter minor UI bugs, partial lag, or temporary language switching failures in the settings view. This is a known physical constraint of the upstream closed-source client and does not impact normal coding, chatting, or Agent workflows. If encountered, simply press `Cmd/Ctrl + Shift + R` or restart the client to self-heal.
 
 ---
 
