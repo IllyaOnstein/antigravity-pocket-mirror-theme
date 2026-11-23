@@ -24,17 +24,22 @@
 
 ## 🖼️ 实机效果
 
-### 1. 标准浅色主界面：高对比书卷暖白工作台 + 衬线正文与活字润墨 + 暗红蜡封输入框
+### 🌟 1. 《Pocket Mirror: Goldenria》大剧院哥特暗黑玫瑰主题（旗舰完全体）
+> **沉浸式哥特大剧院实机完全体**：华丽大剧院红丝绒帷幕 + 暗夜紫心形菱格壁布 + 巴洛克暗金玫瑰浮雕法器输入框 + 维多利亚大客室视口联动全景侧边栏（`fixed` 咬合双栏无缝拼接）+ 底部同行实时遥测指标胶囊与 Goldia 像素精灵常驻守护。
+
+![Pocket Mirror Goldenria 大剧院哥特完全体实机展示](assets/preview-pocket-mirror-theatre.png)
+
+### 2. 原生学术暖纸白天模式：高对比书卷暖白工作台 + 衬线正文与活字润墨 + 暗红蜡封输入框
 > 左侧 `#F7F5F0` 暖燕麦侧栏（`Google Sans Flex` × 更纱黑体 UI 字重桥接）+ `#FCFCFB` 微暖亮白对话区与 Markdown 预览（`Anthropic Serif` × `Sarasa Mono Slab SC` 衬线）+ 底部 `1.5px` 暗红蜡封输入框与同行实时指标胶囊。
 
 ![标准浅色书卷暖白主界面视图](assets/preview-light-workbench.png)
 
-### 2. 黑夜界面效果：Claude 暖纸深夜模式（`claude-warm`）+ 代码审阅 Diff 视图
+### 3. 原生极简深夜模式：Claude 暖纸深夜模式（`claude-warm`）+ 代码审阅 Diff 视图
 > `#242320` 暖炭底色 + `#1B1A18` 深炭侧栏 + `#F3F0E4` 象牙白正文 + `#D97757` 陶土暖橙点缀；在「系统设置 → 外观界面」点击 **📖 / 🌙** 按钮即可在「暖纸深夜」与「官方冷碳黑（`onyx`）」之间 `0ms` 切换并自动持久化。
 
 ![黑夜界面 Claude 暖纸深夜与代码审阅视图](assets/preview-dark-workbench.png)
 
-### 3. 上下文对话信息胶囊与悬停遥测详情卡
+### 4. 上下文对话信息胶囊与悬停遥测详情卡
 > 嵌入输入框底栏的实时指标胶囊（支持多路平铺分屏、`/btw` 支线提问与子 Agent 侧栏独立计量）；悬停展开本轮流式/端到端 `tok/s`、`TTFT`、思考链与正文输出拆分，以及当前会话累计压缩水位线与缓存命中率。
 
 ![上下文对话实时信息胶囊与悬停遥测详情卡](assets/preview-metrics-capsule.png)
