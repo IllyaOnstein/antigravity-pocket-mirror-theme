@@ -86,6 +86,11 @@
 ### 🎮 Act III: 双层 JRPG 状态机设置面板 (Dual-Layer JRPG System & Regalia)
 > 灵感源自经典 JRPG（RPG Maker）的经典分层菜单状态机，内置完整的全局键盘控制器拦截与音效联动。
 
+<div align="center">
+  <img src="assets/showcase/anim-jrpg-settings.webp" width="800" alt="JRPG 设置菜单实机动态交互演示" />
+  <p><em>▲ 实机动态交互：一级皇家状态机、Regalia 点数系统与二级勋章轮盘参数面板的平滑键盘流转</em></p>
+</div>
+
 #### 1. 一级面板：皇家状态面板 (`Scene_Menu`)
 展示精美的主角立绘、皇室暗金纹章、当前持有的 **Regalia 点数**，以及六大核心系统导航菜单：
 
@@ -197,7 +202,8 @@ antigravity-pocket-mirror-theme/
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
 │   │   ├── anim-working-rose.webp
-│   │   └── anim-conversation-slots.webp
+│   │   ├── anim-conversation-slots.webp
+│   │   └── anim-jrpg-settings.webp
 │   ├── sidebar_room_panorama.webp # 客室联动全景原画
 │   ├── SL_Box_Mirrored.webp      # 镜像卡槽底图
 │   ├── GEN_RoseCursor.png        # 激活玫瑰光标

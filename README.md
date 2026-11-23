@@ -85,6 +85,11 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 ### 🎮 Act III: Dual-Layer JRPG State Machine System & Regalia
 > Inspired by classic RPG Maker hierarchical system menus, complete with global keyboard controller event interception and tactile soundscapes.
 
+<div align="center">
+  <img src="assets/showcase/anim-jrpg-settings.webp" width="800" alt="JRPG State Machine Interactive Animation" />
+  <p><em>▲ Real-time Interaction: Fluid navigation between Primary Scene_Menu, active Regalia, and Scene_Settings medallion wheels</em></p>
+</div>
+
 #### 1. Primary Scene: Royal Status Chamber (`Scene_Menu`)
 Displays character portraits, gilded crests, active **Regalia Tokens**, and six primary system navigation portals:
 
@@ -196,7 +201,8 @@ antigravity-pocket-mirror-theme/
 │   │   ├── desktop-app-icon.png
 │   │   ├── desktop-app-icon.ico
 │   │   ├── anim-working-rose.webp
-│   │   └── anim-conversation-slots.webp
+│   │   ├── anim-conversation-slots.webp
+│   │   └── anim-jrpg-settings.webp
 │   ├── sidebar_room_panorama.webp # Full parlour seamless panorama
 │   ├── SL_Box_Mirrored.webp      # Gilded slot card frame
 │   ├── GEN_RoseCursor.png        # Active rose focus cursor
