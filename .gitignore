@@ -1,2 +1,6 @@
 dist/
 .cache/
+*.bak
+*.bak*
+*backup*
+*.tmp
