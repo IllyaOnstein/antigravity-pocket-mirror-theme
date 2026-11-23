@@ -234,8 +234,8 @@ window.__pmLang = {
       retBtn.setAttribute('title', isZh ? '返回主菜单' : 'Back to Main Menu');
     }
 
-    // HUD 快捷切换按钮高亮同步
-    document.querySelectorAll('.pm-quick-lang-btn').forEach(b => {
+    // 顶部及 HUD 快捷切换按钮高亮同步
+    document.querySelectorAll('.pm-header-lang-btn, .pm-quick-lang-btn').forEach(b => {
       const bLang = b.getAttribute('data-lang');
       if (bLang === lang) {
         b.classList.add('active');
@@ -243,6 +243,10 @@ window.__pmLang = {
         b.classList.remove('active');
       }
     });
+    const modalContainer = document.querySelector('.settings-modal-container');
+    if (modalContainer) {
+      modalContainer.setAttribute('data-pm-lang', lang);
+    }
 
     // 二级常规设置中的语言卡片同步
     const card = document.getElementById('pm-language-settings-card');
@@ -303,16 +307,6 @@ window.__pmLang = {
         <!-- 立绘旁专属 HUD -->
         <div class="pm-decor-hud" style="position:absolute; right:150px; bottom:175px; z-index:15; pointer-events:none; display:flex; flex-direction:column; align-items:flex-end;">
           <div style="font-family:'Cinzel', 'Noto Serif SC', serif; font-size:24px; color:#ffd700; text-shadow:0 0 8px #ff9800, 0 2px 4px #000; letter-spacing:2px; font-weight:bold;">G????!?</div>
-                    </div>
-          <!-- 快捷语言切换 -->
-          <div class="pm-hud-lang-row" style="margin-top:10px; padding-top:8px; border-top:1px solid rgba(138,109,59,0.45); display:flex; align-items:center; justify-content:space-between; font-family:'Cinzel', 'Noto Serif SC', serif;">
-            <span style="font-size:11px; color:#c4a872; display:flex; align-items:center; gap:4px;">🌐 语言:</span>
-            <div style="display:flex; gap:6px;">
-              <button type="button" class="pm-quick-lang-btn" data-lang="zh" style="background:rgba(45,18,36,0.75); border:1px solid rgba(138,109,59,0.5); border-radius:3px; color:#c4a872; font-family:'Cinzel', 'Noto Serif SC', serif; font-size:11px; padding:2px 8px; cursor:pointer;" title="切换至简体中文">中文</button>
-              <button type="button" class="pm-quick-lang-btn" data-lang="en" style="background:rgba(45,18,36,0.75); border:1px solid rgba(138,109,59,0.5); border-radius:3px; color:#c4a872; font-family:'Cinzel', 'Noto Serif SC', serif; font-size:11px; padding:2px 8px; cursor:pointer;" title="Switch to English">EN</button>
-            </div>
-          </div>
-        </div>
         </div>
 
         <!-- 左上角按键指引 -->
@@ -330,21 +324,32 @@ window.__pmLang = {
         </div>
       `;
       m.appendChild(decor);
-      // Bind HUD quick language buttons
-      const hudLangRow = decor.querySelector('.pm-hud-lang-row');
-      if (hudLangRow && !hudLangRow.__pm_bound) {
-        hudLangRow.__pm_bound = true;
-        hudLangRow.addEventListener('click', (e) => {
-          const btn = e.target.closest('.pm-quick-lang-btn');
-          if (btn) {
-            e.preventDefault(); e.stopPropagation();
-            const targetLang = btn.getAttribute('data-lang');
-            if (targetLang && window.__pmLang) {
-              window.__pmLang.set(targetLang);
-            }
+    }
+
+    // 2.5 Ensure Top Header Language Switcher
+    let headerLang = m.querySelector('#pm-header-lang-switch');
+    if (!headerLang) {
+      headerLang = document.createElement('div');
+      headerLang.id = 'pm-header-lang-switch';
+      headerLang.className = 'pm-header-lang-switch';
+      const curLang = window.__pmLang ? window.__pmLang.get() : 'zh';
+      headerLang.innerHTML = `
+        <span class="pm-lang-globe">🌐</span>
+        <button type="button" class="pm-header-lang-btn ${curLang === 'zh' ? 'active' : ''}" data-lang="zh">中文</button>
+        <span class="pm-lang-divider">/</span>
+        <button type="button" class="pm-header-lang-btn ${curLang === 'en' ? 'active' : ''}" data-lang="en">EN</button>
+      `;
+      headerLang.addEventListener('click', (e) => {
+        const btn = e.target.closest('.pm-header-lang-btn');
+        if (btn) {
+          e.preventDefault(); e.stopPropagation();
+          const targetLang = btn.getAttribute('data-lang');
+          if (targetLang && window.__pmLang) {
+            window.__pmLang.set(targetLang);
           }
-        });
-      }
+        }
+      });
+      m.appendChild(headerLang);
     } else {
       // Ensure semantic classes on children
       const ch = decor.children;
@@ -434,8 +439,17 @@ window.__pmLang = {
 
     
     function ensureLanguageCard() {
-      const container = m.querySelector('.p-6.flex.flex-col.gap-4.w-full.max-w-2xl.mx-auto');
-      if (!container) return;
+      const containers = Array.from(m.querySelectorAll('.p-6.flex.flex-col.gap-4.w-full.max-w-2xl.mx-auto'));
+      if (containers.length === 0) return;
+      // Uniquely identify the General settings container by #project4kMode
+      let generalContainer = containers.find(c => c.querySelector('#project4kMode'))
+        || containers.find(c => {
+          const text = c.innerText || '';
+          return (text.includes('界面布局模式') || text.includes('Layout')) && !text.includes('用户账号');
+        })
+        || containers[1]
+        || containers.find(c => c.offsetWidth > 0);
+      if (!generalContainer) return;
 
       let card = document.getElementById('pm-language-settings-card');
       if (!card) {
@@ -481,7 +495,9 @@ window.__pmLang = {
             }
           }
         });
-        container.prepend(card);
+      }
+      if (card.parentElement !== generalContainer) {
+        generalContainer.prepend(card);
       }
     }
 

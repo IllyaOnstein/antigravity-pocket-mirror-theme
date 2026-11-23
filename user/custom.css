@@ -3474,3 +3474,82 @@ html body .settings-modal-container [data-testid="settings-sidebar"] * {
   visibility: hidden !important;
   opacity: 0 !important;
 }
+
+/* ==========================================================================
+   顶部常驻语言切换胶囊 (Scene_Menu 与 Scene_Settings 均清晰常驻)
+   ========================================================================== */
+.pm-header-lang-switch {
+  position: absolute !important;
+  top: 24px !important;
+  right: 154px !important;
+  height: 32px !important;
+  background: rgba(30, 8, 20, 0.88) !important;
+  border: 1px solid rgba(212, 175, 55, 0.65) !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  padding: 0 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(12px) !important;
+  z-index: 70 !important;
+  pointer-events: auto !important;
+  transition: all 0.2s ease !important;
+  user-select: none !important;
+}
+
+.pm-header-lang-switch .pm-lang-globe {
+  font-size: 13px !important;
+  margin-right: 2px !important;
+  filter: drop-shadow(0 0 4px rgba(255, 215, 0, 0.5)) !important;
+}
+
+.pm-header-lang-switch .pm-lang-divider {
+  color: rgba(212, 175, 55, 0.4) !important;
+  font-size: 11px !important;
+  user-select: none !important;
+}
+
+.pm-header-lang-btn {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 4px !important;
+  color: #c4a872 !important;
+  font-family: 'Cinzel', 'Noto Serif SC', serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+  padding: 2px 7px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  outline: none !important;
+}
+
+.pm-header-lang-btn:hover {
+  background: rgba(70, 16, 42, 0.8) !important;
+  border-color: rgba(255, 215, 0, 0.4) !important;
+  color: #ffffff !important;
+}
+
+.pm-header-lang-btn.active {
+  background: rgba(100, 24, 60, 0.95) !important;
+  border: 1px solid #ffd700 !important;
+  color: #ffd700 !important;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5) !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 4px rgba(255, 215, 0, 0.6) !important;
+}
+
+/* 进场与离场动画挂载 */
+.settings-modal-container:not([data-active-detail="true"]):not([data-modal-closing="true"]) .pm-header-lang-switch {
+  animation: pmExitBtnDropIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+}
+
+.settings-modal-container:not([data-active-detail="true"])[data-modal-closing="true"] .pm-header-lang-switch {
+  animation: pmExitBtnRiseOut 0.35s cubic-bezier(0.4, 0, 0.2, 1) both !important;
+}
+
+/* 英文状态下一级退出按钮显示为 X Exit */
+.settings-modal-container[data-pm-lang="en"]:not([data-active-detail="true"]) > button:first-child::after {
+  content: "X Exit" !important;
+}

@@ -1,141 +1,256 @@
-# Antigravity Pocket Mirror Theme (《金纽扣之镜》哥特玫瑰维多利亚全栈主题套件)
+# 🪞 Pocket Mirror: Goldenria — Gothic Victorian Theme Suite for Google Antigravity
 
-[![Version](https://img.shields.io/badge/version-5.5.5--pocket--mirror-7A1F1A.svg)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
-[![Antigravity](https://img.shields.io/badge/Antigravity-2.34.0%2B-D97757.svg)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
-[![Node](https://img.shields.io/badge/node-%3E%3D22.0.0%20(22.13%2B%20Full)-339933.svg)](https://nodejs.org/)
-[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+<div align="center">
 
-面向 Google Antigravity（支持最新 **`2.34.0+`**）的深度定制哥特美学全栈主题套件：预装《Pocket Mirror: Goldenria》（金纽扣之镜）维多利亚大客室双栏联动全景、镜像卡槽相框、暗金玫瑰法器光标与 Goldia 常驻守护，兼具四层中西文排版、1,942 条界面汉化、中英双语即时无缝切换器与 SQLite 实时会话遥测胶囊。不修改客户端 `.asar` 与系统签名，零第三方 npm 依赖，由 AI Agent 一键部署并通过 `user/` 层实现 `2.5s` 热重载定制。
+<h3>
+  <b>🌐 English</b>
+  &nbsp;|&nbsp;
+  <a href="README.zh-CN.md">🇨🇳 简体中文</a>
+</h3>
 
-> 供 AI Agent 读取的完整部署与改装技术契约位于仓库根目录 **[`SKILL.md`](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme/blob/main/SKILL.md)**。
+[![Version](https://img.shields.io/badge/version-5.5.5--pocket--mirror-800020.svg?style=for-the-badge)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
+[![Antigravity](https://img.shields.io/badge/Antigravity-2.34.0%2B-D4AF37.svg?style=for-the-badge)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
+[![Node](https://img.shields.io/badge/node-%3E%3D22.0.0-339933.svg?style=for-the-badge)](https://nodejs.org/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-4A0E17.svg?style=for-the-badge)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
+[![Style](https://img.shields.io/badge/style-Gothic%20Victorian%20%26%20JRPG-gold.svg?style=for-the-badge)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+<br/>
+
+**“Transform your cold modern AI programming workbench into a majestic gothic theatre woven of crimson velvet, dark golden roses, and baroque mysteries.”**
+
+<br/>
+
+![Pocket Mirror Theme Welcome Hero](assets/showcase/hero-pocket-mirror.png)
+
+</div>
 
 ---
 
-## 🔗 资源入口
+## 🌹 Overview
 
-| 入口 | 地址 | 说明 |
+**Antigravity Pocket Mirror Theme** is a comprehensive, full-stack immersive gothic baroque customization suite engineered for **Google Antigravity (supporting version 2.34.0+)**.
+
+Drawing artistic inspiration from the legendary psychological gothic mystery indie masterpiece **《Pocket Mirror: Goldenria》**, this project thoroughly reimagines Antigravity's visual presentation, animation ergonomics, and system interaction:
+- 🎭 **The Velvet Opera Stage & Curtains**: Heart-diamond damask wallpaper and baroque filigree prompt container;
+- 🛋️ **Victorian Parlour Viewport Linkage**: Breakthrough CSS viewport anchorage that resolves sidebar stretching and background fractures;
+- 🎮 **Dual-Layer JRPG State Machine Panel**: Classic RPG Maker style keyboard-driven system hub featuring character portraits and Regalia counters;
+- 🖼️ **Mirrored Frame Conversation Slots**: Vertically centered symmetric picture frames, subtle ambient glow, and animated rose cursors;
+- ⚙️ **Non-Invasive Hot Injection Engine**: Native Chrome DevTools Protocol (CDP) runtime injection without tampering with client `.asar` or signatures, enabling `2.5s` hot reloading.
+
+> 🤖 **AI Agent Deployment Contract**: For an automated installation and modification protocol tailored for AI Agents, consult the root contract **[`SKILL.md`](SKILL.md)**.
+
+---
+
+## 🖼️ Visual Showcase Gallery
+
+### 🎭 Act I: The Velvet Opera Stage & Dialogue
+> Velvet tassel curtains frame the canvas on both sides, while the dialogue space is dressed in midnight wine-red heart-diamond damask. Every conversation bubble is set within an antique baroque gilded picture frame, bordered by intertwining dark golden rose filigree.
+
+![Velvet Opera Stage Dialogue Interface](assets/showcase/theatre-dialogue.png)
+
+#### 🌸 Animated Working Rose Indicator
+While the Agent conducts extended thinking, tool execution, or deep code auditing, the status container blossoms with an animated spinning rose alongside real-time metrics:
+
+<div align="center">
+  <img src="assets/showcase/anim-working-rose.webp" width="340" alt="Working Rose Animation" />
+  <p><em>▲ Active Execution: Animated revolving rose with real-time telemetry (Hold · Context Window · tok/s)</em></p>
+</div>
+
+---
+
+### 🛋️ Act II: Victorian Parlour & Viewport-Linked Panorama
+> Vintage tufted leather crimson velvet sofa, antique gilded dressing mirror, birdcage chandelier, and rich hardwood parquet. Centered overhead hangs the gothic filigree command hub, offering swift access to Code Review, Open Files, Terminal, Built-in Browser, Secondary Questions, and Extensions.
+
+![Victorian Parlour Panorama with Centered Gothic Menu](assets/showcase/victorian-room-panorama.png)
+
+#### 💡 Architectural Innovation: Seamless Viewport Panorama
+Expanding and collapsing sidebars traditionally fractures or stretches background artwork. This theme introduces an absolute viewport anchorage paradigm:
+```css
+/* user/custom.css Viewport Anchorage Engine */
+.bg-sidebar,
+[data-side-panel-body],
+.ag-stage-background {
+  background-image: url('../assets/sidebar_room_panorama.webp');
+  background-attachment: fixed !important;
+  background-position: left top !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+```
+Regardless of whether the left drawer or right auxiliary sidecars are collapsed, resized, or dragged, the background panorama **locks together with pixel perfection**, unveiling a unified Victorian parlour painting across your entire screen!
+
+---
+
+### 🎮 Act III: Dual-Layer JRPG State Machine System & Regalia
+> Inspired by classic RPG Maker hierarchical system menus, complete with global keyboard controller event interception and tactile soundscapes.
+
+#### 1. Primary Scene: Royal Status Chamber (`Scene_Menu`)
+Displays character portraits, gilded crests, active **Regalia Tokens**, and six primary system navigation portals:
+
+![JRPG Primary Scene Menu](assets/showcase/jrpg-menu-scene.png)
+
+#### 2. Secondary Scene: System Configuration & Medallions (`Scene_Settings`)
+Inside secondary settings, golden insignia medallions hover to the left while bottom navigation renders retro gamepad-style interaction shortcuts (`[Z] Confirm / [X] Cancel / [Q][E] Page Switch / [↑][↓] Navigate`):
+
+![JRPG Secondary Scene Settings](assets/showcase/jrpg-settings-scene.png)
+
+---
+
+### 📜 Act IV: The Memory Gallery & Mirrored Frame Slots
+> Sidebar conversation lists discard dull flat rectangles. Each dialogue session is nestled inside a gilded antique picture frame (`SL_Box_Mirrored`). Hovering triggers ambient radiance while the golden rose crest (`GEN_RoseCursor`) dynamically tracks your focus:
+
+<div align="center">
+  <img src="assets/showcase/anim-conversation-slots.webp" width="600" alt="Conversation Slot Animation" />
+  <p><em>▲ Interaction Ergonomics: Ambient glow on hover and dynamic rose tracking cursor</em></p>
+</div>
+
+![Conversation Frame Slots Detail](assets/showcase/conversation-slots.png)
+
+---
+
+### 👑 Act V: Custom Baroque Crest & Desktop Icon
+> A bespoke baroque gold rose desktop icon specifically tailored for the suite. Midnight obsidian base encircled by climbing thorny rose boughs surrounding the Antigravity emblem, available in both `.png` and multi-resolution Windows `.ico` format.
+
+<div align="center">
+  <img src="assets/showcase/desktop-app-icon.png" width="220" alt="Pocket Mirror Desktop Icon" />
+  <p><em>▲ Collector's Antigravity Application Icon (Located at <code>assets/showcase/desktop-app-icon.ico</code>)</em></p>
+</div>
+
+---
+
+## 🏛️ Architecture & Technical Innovations
+
+| Key Innovation | Implementation Mechanism | User & Developer Benefits |
 | :--- | :--- | :--- |
-| **1. Google Drive 资源包（含字体）** | [**Google Drive 共享文件夹**](https://drive.google.com/drive/folders/1NX92SgVUqtSjWg6bt6sIJXy-cn7J_boC) | 含成品包与全套必备字体：`AnthropicSerif-Regular/Bold.ttf`、`AnthropicMono-Regular.ttf`、**Windows 专用精简拆分包 [`Windows-Sarasa-Split-SC-TTF-v1.0.43.zip`](https://drive.google.com/file/d/1iVVvZXtwUcDiHy42tJ25X6N-JlOf3l7A/view?usp=sharing)**（170 MB，内含 14 个独立 SC `.ttf`，彻底规避 791 MB 单体 `SuperTTC` 在 DirectWrite/Chromium 引发的加载卡顿与 >2GB 虚存占用，见 #19）以及 macOS/Linux 用 `Sarasa-SuperTTC.ttc`（macOS 亦可直接运行 `brew install --cask font-sarasa-gothic`）。 |
-| **2. GitHub 代码仓库** | [**IllyaOnstein/antigravity-pocket-mirror-theme**](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme) | 包含预装《Pocket Mirror》全套哥特美学组件、个人改装层 `user/`、生命周期 CLI `install.mjs` 与 [`SKILL.md`](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme/blob/main/SKILL.md)（基于上游 `Anarcadia/chuanban-antigravity-theme-patch` 内核）。 |
-| **3. Notion 引导页** | [**chuanban-antigravity-theme-patch**](https://chuanban.notion.site/chuanban-antigravity-theme-patch-db7c5846f37546be9481cd791aed0554) | 图文说明与安装引导镜像页。 |
+| **Seamless Viewport Panorama** | `background-attachment: fixed` + Absolute viewport anchoring | Eliminates background fragmentation when resizing sidebars and drawers |
+| **JRPG State Machine Controller** | `user/custom.js` global keyboard listeners (`Z/X/C/Enter/Esc`) | Immersive retro gaming ergonomics and fluid navigation without mouse clicks |
+| **Non-Invasive CDP Hot Reload** | Chrome DevTools Protocol runtime discovery & style mounting | Zero tampering with `.asar` files or binary code signatures |
+| **Physical Layer Decoupling** | Pure separation between `core/` (read-only) and `user/` (custom) | Pull upstream updates without overwriting customized assets or CSS |
+| **Four-Tier Classic Typography** | `Anthropic Serif` × Sarasa Mono Slab SC × DirectWrite optimizations | Eliminates font rendering blurriness on Windows and brings literary warmth |
+| **1,942 Seamless Translations** | `WeakMap` incremental DOM observers with strict code isolation | Native-quality bilingual fluency with instant runtime switching |
 
 ---
 
-## 🖼️ 实机效果
+## 🚀 Quick Start Guide
 
-### 1. 标准浅色主界面：高对比书卷暖白工作台 + 衬线正文与活字润墨 + 暗红蜡封输入框
-> 左侧 `#F7F5F0` 暖燕麦侧栏（`Google Sans Flex` × 更纱黑体 UI 字重桥接）+ `#FCFCFB` 微暖亮白对话区与 Markdown 预览（`Anthropic Serif` × `Sarasa Mono Slab SC` 衬线）+ 底部 `1.5px` 暗红蜡封输入框与同行实时指标胶囊。
+### 1. Prerequisites
+- **Node.js**: `>= 22.0.0` (Recommended **`>= 22.13.0`** with native `node:sqlite` telemetry);
+- **Google Antigravity**: Latest official release (`2.34.0+`).
 
-![标准浅色书卷暖白主界面视图](assets/preview-light-workbench.png)
+### 2. Autonomous AI Agent Installation
+Simply copy and prompt your AI Agent (Antigravity, Claude Code, or Cursor):
 
-### 2. 黑夜界面效果：Claude 暖纸深夜模式（`claude-warm`）+ 代码审阅 Diff 视图
-> `#242320` 暖炭底色 + `#1B1A18` 深炭侧栏 + `#F3F0E4` 象牙白正文 + `#D97757` 陶土暖橙点缀；在「系统设置 → 外观界面」点击 **📖 / 🌙** 按钮即可在「暖纸深夜」与「官方冷碳黑（`onyx`）」之间 `0ms` 切换并自动持久化。
+```markdown
+Please clone and deploy the Pocket Mirror Theme Suite for my Antigravity environment:
+1. Clone repository: git clone https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme.git
+2. Thoroughly review SKILL.md deployment rules.
+3. Run `node install.mjs install` to mount injection hooks and daemon configurations.
+4. Run `node install.mjs verify` to confirm styles and CDP injection status.
+```
 
-![黑夜界面 Claude 暖纸深夜与代码审阅视图](assets/preview-dark-workbench.png)
+### 3. Manual Installation
 
-### 3. 上下文对话信息胶囊与悬停遥测详情卡
-> 嵌入输入框底栏的实时指标胶囊（支持多路平铺分屏、`/btw` 支线提问与子 Agent 侧栏独立计量）；悬停展开本轮流式/端到端 `tok/s`、`TTFT`、思考链与正文输出拆分，以及当前会话累计压缩水位线与缓存命中率。
+```bash
+# 1. Clone this repository into your environment
+git clone https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme.git
+cd antigravity-pocket-mirror-theme
 
-![上下文对话实时信息胶囊与悬停遥测详情卡](assets/preview-metrics-capsule.png)
+# 2. Audit runtime environment and fonts
+node install.mjs doctor
 
----
+# 3. Perform one-click installation
+node install.mjs install
 
-## 🌹 典藏定制皮肤：《Pocket Mirror: Goldenria》（金纽扣之镜 · 哥特玫瑰维多利亚）
+# 4. Relaunch Antigravity client with debugging port mounted
+node install.mjs relaunch
 
-本项目深度预装了 **《Pocket Mirror: Goldenria》（金纽扣之镜）** 全套哥特美学沉浸式主题套件（位于 user/ 改装层及 ssets/ 静态素材库），开箱即享：
-
-### 🌟 核心特性与设计亮点
-1. **维多利亚大厅全景联动壁布（全景视口一体联动）**：
-   - 彻底解决原生侧边栏拉伸时背景断层与左右栏错位的技术难题；
-   - 采用现代 CSS 视口咬合技术（ackground-attachment: fixed + left top + cover），将 2048×1142 高清维多利亚客室原画作为全局底层连贯全景；
-   - 左侧边栏（.bg-sidebar）与右侧副栏（[data-side-panel-body]）无论如何拖拽伸缩，背景始终形成连贯壮丽的完整大厅画卷！
-2. **Pocket Mirror 沉浸式哥特美学 UI**：
-   - **镜像相框卡槽**（SL_Box_Mirrored）：会话列表垂直对称优雅布局，兼具古典相框与深色磨砂质感；
-   - **专属激活法器**：选中会话浮现顶部绯红金玫瑰指示器（SL_Rose）与右侧上下浮动的尖尖手形/玫瑰光标（HandCursor / GEN_RoseCursor）；
-   - **哥特黑金边框与华丽暗红蜡封**：全界面暗夜微光质感与维多利亚花纹；
-   - **模型切换菜单哥特式卷轴**（model_menu_bg / model_lining_glow）：下拉选择模型如同展开古老魔法羊皮卷轴；
-   - **选项菜单雕花纹理**（optionsMenu / optionsDotted）：设置与上下文菜单全部采用典藏像素雕花。
-3. **左下角伴随角色 Goldia Sprite**：
-   - 灵动的像素小人常驻侧栏左下角，默默守护你的编码与创作之旅。
-4. **中英双语即时无缝切换系统（Display Language Switcher）**：
-   - user/custom.js 内置无缝双语切换机制与状态持久化，无需重启即可在母语级汉化与原生英文间自由跳转。
-5. **幕布大剧院转场与全功能调优控制台**：
-   - 附带大剧院幕布平滑动效与调参控制台（Curtains Live Tuning Console）。
+# 5. Verify deployment health
+node install.mjs verify
+```
 
 ---
 
-## ✨ 核心特性（v5.5.5）
+## 🎨 Applying Custom Windows Desktop Icon
 
-- **昼夜双模式与四套配色预设**：浅色内置高对比暖白（默认）、ClaudeDesktop 净白、复古羊皮纸三套暖纸预设及 macOS 浅色全域活字润墨；深色在客户端外观面板原生嵌入 **📖 书卷按钮**（`[ 🖥️ | ☀️ | 📖 | 🌙 ]`），一键切换官方碳黑（`onyx`）或 Claude 暖纸深夜（`claude-warm`），自动同步 Windows 原生标题栏、启动幕布与 `Swarm` 协作子帧。
-- **四层中西文排版与字重桥接**：UI 西文直连官方 `Google Sans Flex` 可变字体引擎（`wght 350–650`, `wdth 92`，内置 `#ag-google-sans-flex-fonts` 防脱靶保底与去重），中文经 `AgSarasaUI` 精确映射更纱黑体字重（消除 `350` 字重落入 `Light` 发虚与 Windows `FontLink` 微软雅黑替换）；对话正文与 Markdown 保持 `Anthropic Serif` + `Sarasa Mono Slab SC` 衬线（含 Windows `DirectWrite` 子节点 `wght 400/500/600` 还原）；代码、终端与 `.inline-pill[data-uri]` 行内文件芯片采用 `Anthropic Mono` 等宽；主输入框采用打字机板状粗衬线配三态蜡封边框。
-- **1,942 条界面汉化与代码/文件芯片严格隔离**：覆盖主界面、划词浮动交互按钮（`Quote` / `Comment` / `支线提问` 上下文守卫精准翻译）、15+ 设置子页、编排器与对战模式、对话与编辑器新设置项、快捷键方案、内置浏览器管理、`Swarm` 蜂群面板与无括号模型努力度档位动态文案；全词表通过大小写与弯直引号零碰撞校验并支持 `…` ↔ `...` 双向容错查找，基于 `WeakMap` 追踪英文原词支持热还原，严格隔离代码块、Monaco 编辑器、终端、行内文件胶囊及英文历史对话标题。
-- **SQLite `O(1)` 实时指标胶囊 + 系统设置「本地扩展 → Token 统计」分析面板**：基于 Node.js `>= 22.13` 原生 `node:sqlite`（兼容本地会话库与 Windows WSL2 默认发行版双轨只读读取），在分屏、`/btw` 与子 Agent 标签页各自独立展示 `tok/s`、`TTFT`、真实模型上下文上限（`256k`–`1M+`）、子 Agent 全树汇总（`+N sub`）与缓存命中率；同时在设置弹窗原生嵌入「Token 统计」Tab（26 周贡献热力图、14 日堆叠趋势、模型/配额池与工具/子 Agent/对话/规划/记忆场景归因、父子会话展开与低缓存预警，异步分片零阻塞且对 Swarm 子帧自动裁剪载荷）。
-- **零侵入单图标启动接力、Windows 保活自愈与 `2.5s` 热重载架构**：针对 Antigravity `2.33.0+` 默认移除调试端口的变更，保持双端**唯一官方原版图标**（Windows/Linux 原地幂等修补快捷方式参数并内置客户端更新后 `.lnk` 自动自愈与 5 分钟计划任务静默保活，全平台守护进程在冷启动 `<=12s` / 更新重启 `<=25s` 自动无感补挂 `--remote-debugging-port=0`，对存量活跃会话 100% 豁免保护），并通过宿主独占指纹门禁豁免内置浏览器本地预览页；`core/` 只读内核与 `user/` 个人配置层物理分离，升级不覆盖个人修改，修改 `user/*` 保存后 `2.5s` 自动热生效。
-
----
-
-## 🚀 安装、升级与日常定制
-
-### 一、新用户首次安装
-1. **环境准备**：安装 **Node.js `>= 22.0.0`**（推荐 **`>= 22.13.0`** 以启用实时指标胶囊），并从 [**Google Drive 资源包**](https://drive.google.com/drive/folders/1NX92SgVUqtSjWg6bt6sIJXy-cn7J_boC) 下载上述 4 个字体文件（可先放在下载目录，直接让下方 Agent 一键完成注册安装）。
-2. **复制以下引导词发给你的 AI Agent（Antigravity / Claude Code / Codex / Cursor 等）**：
-
-> **💬 复制发给 Agent（新用户一键安装）**：  
-> 请帮我克隆 `https://github.com/Anarcadia/chuanban-antigravity-theme-patch.git`（或读取我已下载解压的补丁目录），先完整阅读仓库内的 `SKILL.md`，再按以下顺序部署并处理边缘情况：  
-> 1. 若本机有 `nvm` / `fnm` / `volta`，优先切换至 `Node >= 22.13.0` 执行命令；运行 `node install.mjs doctor` 检查 `fonts.allRequiredInstalled`。  
-> 2. 若缺少字体（需 `Anthropic Serif`、`Anthropic Mono` 与更纱黑体）：先在我刚下载的目录中查找并用 `node install.mjs install-fonts --from <字体目录>` 一键安装（Windows 下必须用此命令写入注册表，勿仅手动复制文件）；若缺少更纱黑体，macOS 可直接执行 `brew install --cask font-sarasa-gothic`，Linux 可用 `Sarasa-SuperTTC.ttc`，**Windows 请优先从 Google Drive 共享目录下载 `Windows-Sarasa-Split-SC-TTF-v1.0.43.zip`（或从 `be5invis/Sarasa-Gothic` Releases 下载拆分版 `SarasaUiSC-TTF` + `SarasaMonoSlabSC-TTF`）解压后配合 `--retire-super-ttc` 安装**（避免 791 MB 单体 `SuperTTC` 引发首次字重加载卡顿与 >2GB 虚存占用）。
-> 3. 运行 `node install.mjs install` 完成安装（注：macOS 默认单图标模式 `launcherInstalled: false` 属正常设计）。
-> 4. 检查输出中的 `cdpStatus`：若为 `"missing_opt_in_flag"`（Antigravity `2.33.0+` 尚未挂调试端口），**如果你当前正在 Antigravity 内部对话中运行，请勿执行 `--force` 强行重启自断会话**，只需把空闲时执行的命令 `node ~/.gemini/antigravity/theme-patch/install.mjs relaunch`（Windows 为 `node "$HOME\.gemini\antigravity\theme-patch\install.mjs" relaunch`，或提示我直接手动退出重开一次 Antigravity）发给我；如果你在外部独立终端运行且客户端空闲，请直接执行 `node install.mjs relaunch`。
-> 5. 在端口就绪后运行 `node install.mjs verify`，确认 `"ok": true` 且 `"hasStyle": true` 即完成验收。
-
-### 二、老用户升级至 v5.5.5
-`node install.mjs install` 会自动备份旧版 `core/` 内核、更新系统常驻服务，并完整保留 `~/.gemini/antigravity/theme-patch/user/` 中的个人配置：
-
-> **💬 复制发给 Agent（老用户无缝升级）**：  
-> 请帮我拉取最新的 `https://github.com/Anarcadia/chuanban-antigravity-theme-patch.git`（或读取最新解压目录），阅读其中的 `SKILL.md` 后直接运行 `node install.mjs install` 升级至 `v5.5.5`（若我此前使用的是更早期的单文件版 `antigravity-font-daemon.mjs` 且有自定义字号/配色，请先帮我把自定义项迁移到 `~/.gemini/antigravity/theme-patch/user/`）。若安装后 `cdpStatus` 为 `"missing_opt_in_flag"` 且你正在 Antigravity 内部会话中运行，请勿直接中断当前对话，告诉我空闲时运行 `node ~/.gemini/antigravity/theme-patch/install.mjs relaunch`（或手动重开一次客户端）即可；端口已就绪则直接运行 `node install.mjs verify` 验收。
-
-### 三、后续个性化调整与排障话术
-- **🎨 切换昼夜预设、调整字号或微调样式**：
-  > 请按 `~/.gemini/antigravity/theme-patch/SKILL.md` 规范，仅修改 `user/` 目录下的配置文件：把白天预设改为 `"claude-desktop-purewhite"`（或 `"vintage-deep"`） / 把黑夜预设 `"darkPreset"` 改为 `"claude-warm"` / 把对话正文字号 `"--ag-chat-font-size"` 调为 `"16.5px"`。
-- **🇨🇳 自定义修改或补充汉化词条**：
-  > 请在 `~/.gemini/antigravity/theme-patch/user/i18n.override.json` 中新增或覆盖词条 `"英文原词": "自定义中文"`，确认 2.5 秒内页面实时热更新生效。
-- **🔍 故障定界与一键回滚**：
-  > 请按 `~/.gemini/antigravity/theme-patch/SKILL.md` 依次运行 `node install.mjs doctor` 和 `node install.mjs verify --safe-mode` 排查是否为 `user/` 自定义层冲突；如需退回上一版本请运行 `node install.mjs rollback`。
-  - *注：若客户端冷启动后偶发未显示 `Remote`（远程）入口，属官方 `language_server` 冷启动兜底包竞态（补丁已内置空输入态自动自愈；若启动瞬间正在输入触发了草稿保护，按 `Cmd/Ctrl + Shift + R` 刷新一次即可恢复）。*
+1. Locate **`desktop-app-icon.ico`** within `assets/showcase/`;
+2. Copy it to a persistent configuration path (e.g., `C:\Users\<YourUser>\.gemini\antigravity\theme-patch\assets\desktop-app-icon.ico`);
+3. Right-click the **Antigravity** shortcut on your Desktop and select **Properties**;
+4. Click **Change Icon...**, browse to and select the `.ico` file;
+5. Apply and save to adorn your desktop with the Baroque Gold Rose crest.
 
 ---
 
-## 🛡️ 开发红线、合规边界与免责声明
+## 📁 Directory Structure
 
-- **开发红线（致贡献者与 AI Agent）**：本仓库 `main` 分支的后续全部功能迭代（包括但不限于 Token 统计、UI 扩展与主题增强）**坚决不加入**任何自动发送消息/自动化操控对话流、绕过配额或模型限制、拦截或篡改网络请求与请求头、读取/导出 OAuth 凭据、屏蔽官方遥测，以及修改/破解客户端 `.asar` 或二进制签名的功能，从源头杜绝触发账号风控与安全合规风险。
-- **合规边界与免责声明**：本项目为独立的非官方社区视觉、汉化与本地只读统计辅助补丁，与 Google 没有任何关联、背书或合作关系。补丁仅在本地渲染层注入样式/界面文案并以只读方式解析本地会话 SQLite，不修改客户端安装包与代码签名、不代理模型请求、不接触鉴权凭据。鉴于商业客户端软件服务条款（ToS）对运行时前端修改存在字面灰区，且官方客户端策略与调试端口机制可能随时变更，本项目按「现状（AS IS）」提供，不对其长期可用性或合规状态作任何担保；使用者需自行评估并承担相应风险，亦可随时运行 `node install.mjs uninstall` 彻底卸载并还原为官方原版状态。
+```text
+antigravity-pocket-mirror-theme/
+├── assets/                       # Core static assets
+│   ├── showcase/                 # 🖼️ High-resolution showcase & animated WebP
+│   │   ├── hero-pocket-mirror.png
+│   │   ├── theatre-dialogue.png
+│   │   ├── victorian-room-panorama.png
+│   │   ├── jrpg-menu-scene.png
+│   │   ├── jrpg-settings-scene.png
+│   │   ├── conversation-slots.png
+│   │   ├── desktop-app-icon.png
+│   │   ├── desktop-app-icon.ico
+│   │   ├── anim-working-rose.webp
+│   │   └── anim-conversation-slots.webp
+│   ├── sidebar_room_panorama.webp # Full parlour seamless panorama
+│   ├── SL_Box_Mirrored.webp      # Gilded slot card frame
+│   ├── GEN_RoseCursor.png        # Active rose focus cursor
+│   ├── WorkingRose.webp          # Active state revolving rose
+│   └── ...
+├── core/                         # Daemon kernel & CDP injection pipeline (read-only)
+│   ├── daemon.mjs                # Background self-healing daemon
+│   ├── injector.mjs              # Render-process probe & DOM mounter
+│   └── ...
+├── user/                         # User customization layer (2.5s instant hot reload)
+│   ├── custom.css                # Gothic Victorian stylesheet bundle
+│   ├── custom.js                 # JRPG state machine controller & key bindings
+│   └── i18n.override.json        # Translation dictionary overrides
+├── install.mjs                   # Cross-platform lifecycle CLI
+├── SKILL.md                      # AI Agent deployment contract
+├── README.md                     # English documentation (Default)
+├── README.zh-CN.md               # Simplified Chinese documentation
+└── LICENSE                       # MIT Open Source License
+```
 
 ---
 
-## 🕒 版本演进（完整记录见 [`CHANGELOG.md`](CHANGELOG.md)）
+## 🌹 Inspirations & Acknowledgments
 
-- **v5.5.5（2026-11-22 · 现行版）**
-  - 迁移 Windows 计划任务至独立 `TimeTrigger` 并补充 `SessionUnlock` / `StartWhenAvailable` 与健康检查校验，闭环 5 分钟全时段保活（合入 [@shixiaogaoya](https://github.com/shixiaogaoya) [#30](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/30) & [#32](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/32)）。
-  - 延后 `--keep-alive` 拼装至锁接管后并固定后台进程工作目录，消除每 5 分钟空转与目录锁死，同时落盘致命异常与接管日志。
-  - 补齐 `2.34.0` 编排器设置与模型菜单悬停气泡漏译（词典扩至 `1,942` 条），并正式新增根目录 MIT `LICENSE`。
-- **v5.5.4（2026-11-22）**
-  - 跳过占库 92% 的冗余溢出页、修复 Node `22.13~22.14` `StatementSync` 崩溃并支持活跃库锚点增量追加（合入 [@shixiaogaoya](https://github.com/shixiaogaoya) [#28](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/28)，致谢 [@ghang](https://github.com/ghang) [#25](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/25)）。
-  - 新增带指纹校验与强制重算的 `.cache/token-analytics-index.json` 持久化索引，将大库冷启重开耗时从 `2.2s` 压至 `~20ms`。
-  - 校准 `2.34.0` 编排器规划态时间线、`Gemini 4 Argon` / `GPT-OSS 120B` 模型映射及记忆场景归因规则。
-  - 改为 WSL2 异步零唤醒探测与 P9 UNC 基库本地 LRU 复用，修复长表格溢出并实现平时 `0` 全局监听与渲染减负。
-- **v5.5.3（2026-11-21）**：新增「本地扩展 → Token 统计」多维分析面板（[#25](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/25)），适配 `2.34.0` 界面漂移与 `1,940` 条词典（[#27](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/issues/27)），实现守护进程空闲零子进程与渲染器性能根治。
-- **v5.5.2（2026-11-20）**：直连更纱拆分字体并一键退订 SuperTTC 根治 Windows 渲染卡顿（[#19](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/issues/19)、[#24](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/24)），升级 Browser 级 CDP 事件驱动毫秒级发现（[#21](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/21)、[#22](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/22)），修复 macOS Homebrew/fnm 节点软链失效（[#20](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/issues/20)）。
-- **v5.5.1（2026-11-19）**：修复自定义 `contextLimit` 时守护进程启动触发 TDZ 崩溃退出的问题（合入 [@2217173240](https://github.com/2217173240) [#18](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/18)）。
-- **v5.5.0（2026-11-19）**：适配 `2.33.0`（词典 `1,860` 条），落地单图标纯净模式与 `M1 + M2` 零侵入 CDP 启动接力，UI 西文切换 `Google Sans Flex` 并新增 macOS 浅色活字润墨。
-- **v5.4.3（2026-11-18）**：适配 `2.32.2` 与 `Gemini 4 Carbon`（词典 `1,790` 条），支持多路分屏与子 Agent 独立指标胶囊（[#17](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/17)），加固 Swarm 主题同步与冷启动自愈。
-- **v5.4.2（2026-11-17）**：打通主窗口至 `plugin://swarm--` 子帧的实时深浅色中继与零闪白预置，消除双向切换下的子帧主题失步（[#15](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/15)）。
-- **v5.4.1（2026-11-17）**：在「系统设置 → 外观界面 → 主题模式」胶囊中嵌入原生 **📖 书卷按钮**，支持 `0ms` 一键切换「Claude 暖纸深夜」并自动落盘记忆。
-- **v5.4.0（2026-11-16）**：新增 `claude-warm` 暖纸深夜预设（[#13](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/issues/13)）、内置浏览器本地预览页豁免门禁（[#12](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/12)）、Windows WSL2 SQLite 双轨只读读取（[#10](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/issues/10)）与中完整性计划任务自启锁（[#8](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/issues/8)）。
-- **v5.3.0（2026-11-15）**：支持子 Agent 全树消耗汇总 `+N sub`（[#7](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/7)）、动态识别模型真实上下文窗口上限（[#6](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/pull/6)），并完成 `2.32.1` 双平台适配（`1,740` 条词典）。
-- **v5.2.0（2026-11-14）**：适配 Antigravity `2.32.0`，完成全词库系统性去机翻重构与 6 项核心术语统一（`1,630` 条）。
-- **v5.1.8（2026-11-14）**：新增冷启动内嵌兜底包零流量安全自愈机制，解决偶发丢失 `Remote` 远程入口问题。
-- **v5.1.6（2026-11-13）**：适配 Antigravity `2.31.2`，打通 `Swarm` 子帧注入、原生幕布底色同步与防双倍缩放。
-- **v5.1.3（2026-11-11）**：适配 Antigravity `2.31.0`，将 SQLite 指标读取与 DOM 汉化升级为 `O(1)` 增量引擎。
-- **v5.1.0（2026-11-10）**：确立浅色暖纸预设与深色官方碳黑物理隔离的昼夜双模式架构。
-- **v5.0.0（2026-11-04）**：确立「`core/` 只读内核 + `user/` `2.5s` 热重载改装层 + `install.mjs` 一键 CLI」模块化架构。
+- **《Pocket Mirror: Goldenria》**: Immense gratitude to **Astral Shift**. This masterwork of gothic horror and fairytale storytelling provided endless inspiration for this project;
+- **Chuanban Patch (@Anarcadia)**: Heartfelt thanks to the upstream base project [chuanban-antigravity-theme-patch](https://github.com/Anarcadia/chuanban-antigravity-theme-patch) for its CDP injection architecture, font weight bridges, and comprehensive dictionary;
+- **Open Source Explorers**: Thank you to all community developers contributing to the Google Antigravity ecosystem.
+
+---
+
+## ⚖️ Disclaimer
+
+This project is an independent community visual customization suite and is neither affiliated with nor endorsed by Google. It operates strictly within local runtime rendering layers via standard CSS/JS injection and does not alter client binaries, package signatures, or authentication tokens. Users may completely uninstall and revert to standard vanilla Antigravity at any time via `node install.mjs uninstall`.
+
+---
+
+<details>
+<summary><b>🇨🇳 点击展开查看简体中文版概要 (Click to expand Chinese Quick View)</b></summary>
+
+> 📖 **完整中文说明请访问独立文档**：👉 **[README.zh-CN.md](README.zh-CN.md)**
+
+### 核心亮点速览：
+1. **大剧院主舞台与帷幕对话**：红丝绒垂幔、心形菱格暗纹壁布、巴洛克金雕对话框与旋转玫瑰指示器。
+2. **维多利亚客室全景一体联动**：独创 CSS 视口锚定联动，侧边栏自由伸缩背景浑然一体。
+3. **双层 JRPG 状态机系统面板**：键盘全键位控制器驱动，包含主角立绘、Regalia 金币点数系统与勋章轮盘。
+4. **记忆画廊古典相框卡槽**：垂直居中对称相框、微光选中态与灵动法器光标。
+5. **极简部署**：一键安装、零侵入 CDP 热重载、双层隔离升级不丢失个性化设置。
+
+详细内容与中文教程请点击顶部链接或直接查看 [README.zh-CN.md](README.zh-CN.md)。
+
+</details>
+
+---
+
+<div align="center">
+  <sub>Crafted with exquisite gothic passion by <b>Illya Ornstein</b> & the Antigravity Community.</sub>
+</div>
