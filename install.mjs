@@ -35,7 +35,7 @@ process.emitWarning = function (warning, ...rest) {
 
 const GOOGLE_DRIVE_URL = 'https://drive.google.com/drive/folders/1NX92SgVUqtSjWg6bt6sIJXy-cn7J_boC';
 const NOTION_GUIDE_URL = 'https://chuanban.notion.site/chuanban-antigravity-theme-patch-db7c5846f37546be9481cd791aed0554';
-const GITHUB_REPO_URL = 'https://github.com/Anarcadia/chuanban-antigravity-theme-patch';
+const GITHUB_REPO_URL = 'https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme';
 
 const ALLOWED_ORIGINS = [
   'http://127.0.0.1',

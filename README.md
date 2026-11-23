@@ -1,14 +1,14 @@
-# 船板的 Antigravity 主题、字体与汉化补丁 (v5.5.5)
+# Antigravity Pocket Mirror Theme (《金纽扣之镜》哥特玫瑰维多利亚全栈主题套件)
 
-[![Version](https://img.shields.io/badge/version-5.5.5-7A1F1A.svg)](https://github.com/Anarcadia/chuanban-antigravity-theme-patch)
-[![Antigravity](https://img.shields.io/badge/Antigravity-2.34.0%2B-D97757.svg)](https://github.com/Anarcadia/chuanban-antigravity-theme-patch)
+[![Version](https://img.shields.io/badge/version-5.5.5--pocket--mirror-7A1F1A.svg)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
+[![Antigravity](https://img.shields.io/badge/Antigravity-2.34.0%2B-D97757.svg)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
 [![Node](https://img.shields.io/badge/node-%3E%3D22.0.0%20(22.13%2B%20Full)-339933.svg)](https://nodejs.org/)
-[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg)](https://github.com/Anarcadia/chuanban-antigravity-theme-patch)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-lightgrey.svg)](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-面向 Google Antigravity（支持最新 **`2.34.0+`**）的非侵入式运行时补丁：提供书卷暖纸与双深色预设、四层中西文排版、1,942 条界面汉化、SQLite 实时会话遥测胶囊与系统设置「Token 统计」多维分析面板。不修改客户端 `.asar` 与系统签名，零第三方 npm 依赖，由 AI Agent 一键部署并通过 `user/` 层实现 `2.5s` 热重载定制。
+面向 Google Antigravity（支持最新 **`2.34.0+`**）的深度定制哥特美学全栈主题套件：预装《Pocket Mirror: Goldenria》（金纽扣之镜）维多利亚大客室双栏联动全景、镜像卡槽相框、暗金玫瑰法器光标与 Goldia 常驻守护，兼具四层中西文排版、1,942 条界面汉化、中英双语即时无缝切换器与 SQLite 实时会话遥测胶囊。不修改客户端 `.asar` 与系统签名，零第三方 npm 依赖，由 AI Agent 一键部署并通过 `user/` 层实现 `2.5s` 热重载定制。
 
-> 供 AI Agent 读取的完整部署与改装技术契约位于仓库根目录 **[`SKILL.md`](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/blob/main/SKILL.md)**。
+> 供 AI Agent 读取的完整部署与改装技术契约位于仓库根目录 **[`SKILL.md`](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme/blob/main/SKILL.md)**。
 
 ---
 
@@ -17,7 +17,7 @@
 | 入口 | 地址 | 说明 |
 | :--- | :--- | :--- |
 | **1. Google Drive 资源包（含字体）** | [**Google Drive 共享文件夹**](https://drive.google.com/drive/folders/1NX92SgVUqtSjWg6bt6sIJXy-cn7J_boC) | 含成品包与全套必备字体：`AnthropicSerif-Regular/Bold.ttf`、`AnthropicMono-Regular.ttf`、**Windows 专用精简拆分包 [`Windows-Sarasa-Split-SC-TTF-v1.0.43.zip`](https://drive.google.com/file/d/1iVVvZXtwUcDiHy42tJ25X6N-JlOf3l7A/view?usp=sharing)**（170 MB，内含 14 个独立 SC `.ttf`，彻底规避 791 MB 单体 `SuperTTC` 在 DirectWrite/Chromium 引发的加载卡顿与 >2GB 虚存占用，见 #19）以及 macOS/Linux 用 `Sarasa-SuperTTC.ttc`（macOS 亦可直接运行 `brew install --cask font-sarasa-gothic`）。 |
-| **2. GitHub 代码仓库** | [**Anarcadia/chuanban-antigravity-theme-patch**](https://github.com/Anarcadia/chuanban-antigravity-theme-patch) | 包含预封装内核 `core/`、个人改装层 `user/`、生命周期 CLI `install.mjs` 与 [`SKILL.md`](https://github.com/Anarcadia/chuanban-antigravity-theme-patch/blob/main/SKILL.md)（字体请从上方 Google Drive 获取）。 |
+| **2. GitHub 代码仓库** | [**IllyaOnstein/antigravity-pocket-mirror-theme**](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme) | 包含预装《Pocket Mirror》全套哥特美学组件、个人改装层 `user/`、生命周期 CLI `install.mjs` 与 [`SKILL.md`](https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme/blob/main/SKILL.md)（基于上游 `Anarcadia/chuanban-antigravity-theme-patch` 内核）。 |
 | **3. Notion 引导页** | [**chuanban-antigravity-theme-patch**](https://chuanban.notion.site/chuanban-antigravity-theme-patch-db7c5846f37546be9481cd791aed0554) | 图文说明与安装引导镜像页。 |
 
 ---
