@@ -2090,6 +2090,9 @@ async function runInstall() {
   const channel = cliChannel || 'auto';
   const preset = getArg('--preset', null);
   const darkPreset = getArg('--dark-preset', null);
+  const cliLang = getArg('--lang', null);
+  const enableI18n = hasFlag('--i18n') || (cliLang && cliLang.toLowerCase() === 'zh');
+  const disableI18n = (cliLang && cliLang.toLowerCase() === 'en');
   const syncUser = hasFlag('--sync-user');
   const defaultTarget = resolveGlobalInstallDir();
   const targetDir = path.resolve(getArg('--target-dir', defaultTarget));
@@ -2201,7 +2204,6 @@ async function runInstall() {
     currentCfg.modules = {};
   }
   for (const modKey of [
-    'i18n',
     'metrics',
     'composerWaxSeal',
     'deadlockHealer',
@@ -2214,6 +2216,14 @@ async function runInstall() {
     if (typeof currentCfg.modules[modKey] !== 'boolean') {
       currentCfg.modules[modKey] = true;
     }
+  }
+  // i18n 模块：国际化开箱默认保持纯正英文 (false)，仅在显式指定 --lang zh 或 --i18n 时开启中文汉化
+  if (enableI18n) {
+    currentCfg.modules['i18n'] = true;
+  } else if (disableI18n) {
+    currentCfg.modules['i18n'] = false;
+  } else if (typeof currentCfg.modules['i18n'] !== 'boolean') {
+    currentCfg.modules['i18n'] = false;
   }
   // 自动清理早期版本遗留在 user/config.json 中的出厂默认 selectors，确保后续升级由 core/runtime.js 统一托管
   if (currentCfg.selectors && typeof currentCfg.selectors === 'object') {

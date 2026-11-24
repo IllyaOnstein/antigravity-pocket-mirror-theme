@@ -6,12 +6,12 @@
   "distribution": {
     "notionGuide": "https://chuanban.notion.site/chuanban-antigravity-theme-patch-db7c5846f37546be9481cd791aed0554",
     "googleDriveFullBundle": "https://drive.google.com/drive/folders/1NX92SgVUqtSjWg6bt6sIJXy-cn7J_boC",
-    "githubRepo": "https://github.com/Anarcadia/chuanban-antigravity-theme-patch"
+    "githubRepo": "https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme"
   },
   "files": {
     "daemon.mjs": {
-      "sha256": "09b4016447c86e9cd3fb7661e888fb903cf72f93589b180cd1256a90b1767145",
-      "bytes": 242071
+      "sha256": "49078fd0f8fe00cbaa242032ac9cad7a8379875237f06628668b72e94a436328",
+      "bytes": 248668
     },
     "runtime.js": {
       "sha256": "879a54238c453d824b40f46b25ebd55c5bbb7c4df0890927e8d4d69f1aac9d4f",

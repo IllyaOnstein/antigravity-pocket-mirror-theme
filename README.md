@@ -148,6 +148,9 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 
 ## 🚀 Quick Start Guide
 
+> 🌐 **Language Support (Pure English by Default)**:
+> This theme suite installs in **pure vanilla English by default**, preserving your native IDE display language while delivering the complete gothic visual overhaul. If you wish to enable the optional built-in Chinese localization, simply run `node install.mjs install --lang zh` or set `"i18n": true` in `user/config.json`.
+
 ### 1. Prerequisites
 - **Node.js**: `>= 22.0.0` (Recommended **`>= 22.13.0`** with native `node:sqlite` telemetry);
 - **Google Antigravity**: Latest official release (`2.34.0+`).

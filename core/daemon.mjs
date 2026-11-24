@@ -538,7 +538,7 @@ let activeConfig = {
   contextLimit: 256000,
   contextLimitOverride: 0,
   modules: {
-    i18n: true,
+    i18n: false,
     metrics: true,
     tokenAnalytics: true,
     composerWaxSeal: true,
@@ -738,7 +738,7 @@ function rebuildBundleIfNeeded() {
   }
   const modules = Object.assign(
     {
-      i18n: true,
+      i18n: false,
       metrics: true,
       tokenAnalytics: true,
       composerWaxSeal: true,

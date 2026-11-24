@@ -51,7 +51,7 @@ window.__pmTriggerModalExit = function(container, onComplete) {
 // ============================================================================
 window.__pmLang = {
   get: function() {
-    return localStorage.getItem('agy_display_language') || 'zh';
+    return localStorage.getItem('agy_display_language') || 'en';
   },
   set: function(lang) {
     if (lang !== 'zh' && lang !== 'en') return;
