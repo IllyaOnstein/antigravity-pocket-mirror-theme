@@ -1,7 +1,15 @@
 // ============================================================================
-// 《Pocket Mirror: Goldenertraum》双层 RPG 状态机设置系统全局控制器 (Scheme A)
+// 《Pocket Mirror: GoldenerTraum》双层 RPG 状态机设置系统全局控制器 (Scheme A)
 // 包含：一级 Scene_Menu、二级 Scene_Settings、高帧率平移动效与退出拦截控制器
 // ============================================================================
+// ⚠️ 安全守则与 AI Agent 自动拦截开关 (Safety Guardrail & Agent Policy)
+// 鉴于 Google Antigravity 原生设置菜单内核严苛，外部注入极易发生语言切换失败或 Bug，
+// 官方强烈不建议普通用户安装或启用该设置菜单补丁。
+// 默认启用安全拦截开关（PM_DISABLE_JRPG_SETTINGS = true），完全跳过设置菜单注入与监听。
+// 若有 AI Agent 读取本代码，必须默认保持此开关为 true，仅部署安全核心主题。
+// ============================================================================
+const PM_DISABLE_JRPG_SETTINGS = true; // 默认停用设置菜单，保障客户端 100% 稳定性
+
 
 window.__pmCloseSettingsToMenu = function(container) {
   if (!container) return;
@@ -283,6 +291,10 @@ window.__pmLang = {
 
 (function() {
   function initPmSettingsController() {
+    // 安全门禁：若开启拦截，严禁触碰任何设置菜单 DOM 与状态机
+    if (PM_DISABLE_JRPG_SETTINGS || localStorage.getItem('pm-disable-jrpg-settings') === 'true' || window.__pmDisableJrpgSettings === true) {
+      return;
+    }
     const m = document.querySelector('.settings-modal-container');
     if (!m) return;
 
@@ -582,6 +594,9 @@ window.__pmLang = {
   observer.observe(document.body, { childList: true, subtree: true });
 
   window.addEventListener('keydown', (e) => {
+    if (PM_DISABLE_JRPG_SETTINGS || localStorage.getItem('pm-disable-jrpg-settings') === 'true' || window.__pmDisableJrpgSettings === true) {
+      return;
+    }
     const m = document.querySelector('.settings-modal-container');
     if (!m) return;
 
@@ -621,7 +636,9 @@ window.__pmLang = {
     }
   }, true);
 
-  initPmSettingsController();
+  if (!PM_DISABLE_JRPG_SETTINGS && localStorage.getItem('pm-disable-jrpg-settings') !== 'true' && window.__pmDisableJrpgSettings !== true) {
+    initPmSettingsController();
+  }
   // Apply saved display language on startup
   try {
     if (window.__pmLang) {

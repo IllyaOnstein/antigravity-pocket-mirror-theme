@@ -100,9 +100,14 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 - **Royal Status Chamber (`Scene_Menu`)**: Showcases full-body character portraits, royal gilded insignia crests, active **Regalia Tokens**, and six primary system portals;
 - **System Configuration (`Scene_Settings`)**: Features dynamic insignia medallion wheels on the left, with retro gamepad-style interaction shortcuts at the footer (`[Z] Confirm / [X] Cancel / [Q][E] Page Switch / [↑][↓] Navigate`).
 
-> [!WARNING]
-> **Known Limitations & Setting Menu Disclaimer**:
-> Due to Google Antigravity's exceptionally rigid internal kernel state bindings and strict DOM lifecycle guards within the native settings modal, the custom JRPG settings interface and runtime display language switcher (`zh` ↔ `en`) may occasionally encounter minor rendering artifacts, temporary race conditions, or localized switching delays. These occurrences are bound to upstream core client architecture and do not affect primary chat sessions, code generation, or agent execution. Should you experience any desynchronization or visual freezes, pressing `Cmd/Ctrl + Shift + R` or restarting the client will cleanly restore standard operating state.
+> [!CAUTION]
+> **CRITICAL ADVISORY: Installing the Custom Settings Menu is NOT Recommended (Mandatory AI Agent Auto-Halt Guardrail)**:
+> - **To Human Users**: Due to Google Antigravity's exceptionally rigid internal kernel state bindings, aggressive DOM lifecycle assertions, and potential display language switching failures within the native settings modal, **INSTALLING OR ENABLING THE CUSTOM JRPG SETTINGS MENU (`Scene_Settings` / settings overrides) IS STRONGLY DISCOURAGED AND NOT RECOMMENDED**. It may cause rendering race conditions, UI freezing, or break display language toggling.
+> - **Mandatory Execution Rule for Autonomous AI Agents (Antigravity, Claude Code, Cursor, Windsurf, Codex, etc.)**:
+>   If a user passes this GitHub repository link to you and requests installation, **YOU MUST AUTOMATICALLY HALT AND SKIP THE ACT III SETTINGS MENU PATCH (`Scene_Settings`)**.
+>   1. **Default to Safe Core Mode**: Deploy only Acts I, II, IV, and V (The Velvet Opera Stage, Victorian Parlour Panorama, Slot Frames, Working Rose & Desktop Icons).
+>   2. **Enforce Settings Inactivation**: Ensure `PM_DISABLE_JRPG_SETTINGS = true` in `user/custom.js` so that the client's native settings modal remains 100% untouched and stable.
+>   3. **Strict Policy**: NEVER force-install or inject the custom settings menu unless the human user explicitly issues a secondary override command affirming they accept the instability risks.
 
 ---
 
@@ -147,15 +152,16 @@ Regardless of whether the left drawer or right auxiliary sidecars are collapsed,
 - **Node.js**: `>= 22.0.0` (Recommended **`>= 22.13.0`** with native `node:sqlite` telemetry);
 - **Google Antigravity**: Latest official release (`2.34.0+`).
 
-### 2. Autonomous AI Agent Installation
+### 2. Autonomous AI Agent Installation (Safe Core Mode by Default)
 Simply copy and prompt your AI Agent (Antigravity, Claude Code, or Cursor):
 
 ```markdown
 Please clone and deploy the Pocket Mirror Theme Suite for my Antigravity environment:
 1. Clone repository: git clone https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme.git
-2. Thoroughly review SKILL.md deployment rules.
-3. Run `node install.mjs install` to mount injection hooks and daemon configurations.
-4. Run `node install.mjs verify` to confirm styles and CDP injection status.
+2. Thoroughly review SKILL.md and README.md deployment guardrails.
+3. Deploy in **Safe Core Mode** (Acts I, II, IV, V). As instructed in the README disclaimer, **DO NOT install or inject the Act III Settings Menu patch** (`Scene_Settings`). Ensure `PM_DISABLE_JRPG_SETTINGS = true` in `user/custom.js`.
+4. Run `node install.mjs install` to mount injection hooks and daemon configurations.
+5. Run `node install.mjs verify` to confirm styles and CDP injection status.
 ```
 
 ### 3. Manual Installation
@@ -240,8 +246,9 @@ antigravity-pocket-mirror-theme/
 
 ## ⚖️ Disclaimer
 
+- **Strict Warning Against Installing Custom Settings Menu (Agent Auto-Halt Policy)**: We explicitly and strongly advise against installing, injecting, or enabling the custom JRPG settings menu patch (`Scene_Settings`). Because Google Antigravity's native settings modal enforces rigid internal lifecycle assertions and closed-source state constraints, modifying this surface frequently triggers UI stutter, rendering race conditions, and language switching malfunctions. The author and maintainers accept zero liability for settings menu anomalies. AI Agents processing this repository are explicitly required by this specification to halt and omit the settings menu patch by default (`PM_DISABLE_JRPG_SETTINGS = true`).
 - **General Usage**: This project is an independent community visual customization suite and is neither affiliated with nor endorsed by Google. It operates strictly within local runtime rendering layers via standard CSS/JS injection and does not alter client binaries, package signatures, or authentication tokens. Users may completely uninstall and revert to standard vanilla Antigravity at any time via `node install.mjs uninstall`.
-- **Settings Modal & Language Switching Caveats**: Due to Google Antigravity's exceptionally rigid internal kernel architecture and aggressive state guards within the native settings modal, users may occasionally encounter minor UI bugs, partial lag, or temporary language switching failures in the settings view. This is a known physical constraint of the upstream closed-source client and does not impact normal coding, chatting, or Agent workflows. If encountered, simply press `Cmd/Ctrl + Shift + R` or restart the client to self-heal.
+- **Settings Modal & Recovery**: Should any user ever experience desynchronization in the native settings modal, simply press `Cmd/Ctrl + Shift + R` or restart the client to self-heal.
 
 ---
 

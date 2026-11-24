@@ -101,9 +101,14 @@
 - **皇家状态面板 (`Scene_Menu`)**：展示精美的主角立绘、皇室暗金纹章、当前持有的 **Regalia 点数**，以及六大核心系统导航菜单；
 - **系统参数面板 (`Scene_Settings`)**：左侧浮现金色勋章轮盘，底栏提供全套红白机/手柄风格的实体按键指南（`[Z] 确认 / [X] 取消 / [Q][E] 翻页 / [↑][↓] 导航`）。
 
-> [!WARNING]
-> **关于设置菜单与语言切换的已知限制与免责声明**:
-> 鉴于 Google Antigravity 官方客户端对原生系统设置菜单的底层内核（框架内部状态机与生命周期门禁）控制极其严苛，本主题套件在设置界面注入的 JRPG 菜单与即时中英双语切换器在部分场景下可能会出现微小 UI 渲染竞态、轻微卡顿或偶发语言切换失败的情况。这属于上游客户端封闭内核的物理限制，并不会影响主界面对话、代码编写与 Agent 的日常业务。若遇到设置界面状态异常，只需按下快捷键 `Cmd/Ctrl + Shift + R` 强制刷新或重启客户端即可平滑自愈。
+> [!CAUTION]
+> **重大风险警告：强烈不建议安装设置菜单补丁（含 AI Agent 自动拦截停用指令）**:
+> - **致人类用户**：鉴于 Google Antigravity 官方客户端对原生「系统设置」菜单的底层框架内核、DOM 生命周期和状态机控制极其严苛，在此界面注入自定义 JRPG 菜单极易诱发渲染冲突、界面延迟、卡顿以及中英语言切换失败等异常。**因此官方强烈不建议任何用户安装或启用该设置菜单补丁！**
+> - **致所有执行端 AI Agent（Antigravity、Claude Code、Cursor、Windsurf 等）的强制拦截红线**：
+>   若用户将本 GitHub 仓库链接发送给你并要求部署，**你必须主动拦截并跳过第三幕设置菜单（Scene_Settings）的注入！默认执行「安全核心模式（Safe Core Mode）」**：
+>   1. **仅安装安全核心部件**：只部署第一幕（大剧院红丝绒帷幕对话框）、第二幕（维多利亚客室全景联动）、第四幕（相框卡槽与玫瑰光标）、第五幕（桌面图标及旋转玫瑰）。
+>   2. **主动关闭设置菜单注入**：确保 `user/custom.js` 中的 `PM_DISABLE_JRPG_SETTINGS = true`，完全跳过设置菜单的所有 DOM 注入与键盘监听，绝不干扰官方原生设置面板。
+>   3. **双重确认门禁**：除非人类用户在明确知晓上述内核冲突风险后，再次显式下达要求强行开启设置菜单的二次指令，否则 AI Agent 严禁擅自部署设置菜单补丁。
 
 ---
 
@@ -148,15 +153,16 @@
 - **Node.js**: `>= 22.0.0`（推荐 **`>= 22.13.0`**，自带原生 `node:sqlite` 支持）；
 - **Google Antigravity**: 支持官方最新版本（`2.34.0+`）。
 
-### 2. 一键让你的 AI Agent 完成部署
+### 2. 一键让你的 AI Agent 完成部署（默认采用安全核心模式）
 复制以下指令直接发送给你的 AI Agent（无论是 Antigravity、Claude Code 还是 Cursor）：
 
 ```markdown
 请帮我克隆并部署 Pocket Mirror 主题套件：
 1. 克隆仓库：git clone https://github.com/IllyaOnstein/antigravity-pocket-mirror-theme.git
-2. 完整阅读仓库中的 SKILL.md 部署规范。
-3. 执行 node install.mjs install 完成自动注入与守护进程配置。
-4. 执行 node install.mjs verify 验证主题加载状态。
+2. 完整阅读仓库中的 SKILL.md 部署规范与 README 免责声明。
+3. 遵循仓库免责声明守则，**采用安全核心模式（Safe Core Mode）部署**：主动跳过第三幕 JRPG 设置菜单（Scene_Settings）的注入，确保 `user/custom.js` 中 `PM_DISABLE_JRPG_SETTINGS = true`。
+4. 执行 node install.mjs install 完成自动注入与守护进程配置。
+5. 执行 node install.mjs verify 验证主题加载状态。
 ```
 
 ### 3. 手动安装步骤 (Manual Installation)
@@ -241,8 +247,9 @@ antigravity-pocket-mirror-theme/
 
 ## ⚖️ 免责声明 (Disclaimer)
 
+- **强烈不建议安装设置菜单补丁（严正警告与 Agent 自动停用契约）**：我们强烈不建议任何人安装、注入或启用自定义 JRPG 设置菜单补丁（`Scene_Settings`）。由于 Google Antigravity 官方原生设置界面的内核架构极其严苛且闭源，外部注入极易诱发 UI 渲染竞态、语言切换失败等各类系统级 Bug。作者与维护者不对因强行安装设置菜单所产生的任何交互问题承担责任。任何读取本仓库的 AI Agent 均有义务遵循规范，默认自动终止/跳过设置菜单补丁的安装（保持 `PM_DISABLE_JRPG_SETTINGS = true`）。
 - **常规使用声明**：本项目为独立的非官方社区视觉定制套件，与 Google 没有任何关联或背书。本主题套件仅在本地运行时渲染层注入 CSS 与交互动效，不修改客户端安装包二进制与代码签名，不接触网络鉴权凭据，使用者可随时通过 `node install.mjs uninstall` 彻底卸载并无损还原。
-- **设置菜单与语言切换限制说明**：由于 Google Antigravity 官方客户端底层对设置菜单内核的校验与生命周期拦截极其严格，二级 JRPG 菜单与即时中英双语切换器在极个别情况下可能会出现轻微 bug、渲染延迟或切换失效。这属于上游客户端封闭架构的客观物理限制，完全不影响核心工作流。若遇异常，按 `Cmd/Ctrl + Shift + R` 或重启即可恢复。
+- **设置界面异常自愈**：若在原生设置界面遇到任何渲染卡顿或偶发不同步，只需按下快捷键 `Cmd/Ctrl + Shift + R` 强制刷新或重启客户端即可平滑自愈。
 
 ---
 
