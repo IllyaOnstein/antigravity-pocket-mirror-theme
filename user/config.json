@@ -6,6 +6,7 @@
   "contextLimit": 256000,
   "modules": {
     "i18n": false,
+    "jrpgSettings": true,
     "metrics": true,
     "tokenAnalytics": true,
     "composerWaxSeal": true,
